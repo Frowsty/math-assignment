@@ -214,6 +214,7 @@ Find out how long of a pulse we should send to the light for different percentag
 
 The most common frequenzy for a light dimmer is 500hz. The pulse time and width is measured in seconds  
 The so called duty cycle is measured in percentage which would indicate a 0 - 1 value... example 25% = 0.25  
+  
 PW = Pulse width in seconds  
 D = Duty cycle in percentage value  
 T = 1 / f = Time  
