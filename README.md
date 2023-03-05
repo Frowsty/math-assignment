@@ -12,7 +12,7 @@ Control the colors of the lights by inputting a HEX value and have the system co
 |  Type          | Description |
 |  ------------  | :------------: |
 | Temperature Sensor  | Reads temperature|
-| Light/Dimmer        | Reads light levels|
+| Light/Dimmer        | Lights with RGB and Dimmer functions|
 | LIDAR Sensor	      | Reads movement|
 | Magnet contacts     | For doors (alarm system) |
 | Smart lights ( RGB )| Lights up the room in beautiful colors|
