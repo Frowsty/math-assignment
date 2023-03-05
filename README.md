@@ -153,6 +153,7 @@ Lidar stands for light detection and ranging, we can use this to measure distanc
 Lidar determines distance with the following equation
 
 `d = c * t / 2`  
+  
 d = distance  
 c = the constant of speed of light  
 t = time between lidar giving out a light signal to when it is received again  
