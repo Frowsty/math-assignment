@@ -96,7 +96,7 @@ X = Value = Temperature every minute
 A = Average = (X1 + X2 + Xt) / t  
 Deviation = sqrt(sum of(X - A)^2/t)  
 
-Using the following equation we can calculate the population standard deviation
+Using the following equation we can calculate the population standard deviation  
 ![equation](https://www.bizskinny.com/images/population-standard-deviation-formula.PNG)
 ## Solving the hex conversion to decimal (RGB)
 
@@ -105,9 +105,9 @@ Example #32A852 -> R: #32, G: #A8, B: #52
 
 Once we have split it into 3 pieces we can calculate each piece separately  
   
-R: #32 -> (3 * 16) + 2 = 50
-G: #A8 -> (10 * 16) + 8 = 168
-B: #52 -> (5 * 16) + 2 = 82
+R: #32 -> (3 * 16) + 2 = 50  
+G: #A8 -> (10 * 16) + 8 = 168  
+B: #52 -> (5 * 16) + 2 = 82  
 
 In code we don't have to convert hex to decimal but rather just split the hex value into 3 pieces.
 The computer automatically converts it for us, an int can store hex, bytes and decimal values.
@@ -151,10 +151,10 @@ Example:
 Lidar stands for light detection and ranging, we can use this to measure distance between the lidar sensor and an object. In my use case we will point the lidar sensor at the main door of the building to track distance between the sensor and anything walking into the door.
 Lidar determines distance with the following equation
 
-`d = c * t / 2`
-d = distance
-c = the constant of speed of light
-t = time between lidar giving out a light signal to when it is received again
+`d = c * t / 2`  
+d = distance  
+c = the constant of speed of light  
+t = time between lidar giving out a light signal to when it is received again  
 
 In a program we can continuously search for deviance between what values we expect from the sensor vs what we don't expect when the alarm system is on.
 
