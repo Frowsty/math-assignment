@@ -23,6 +23,7 @@ Control the colors of the lights by inputting a HEX value and have the system co
 - Solving the singal sent from door magnet contacts to the main system
     - How to send the signal from the contacts to the system
 - Read the light levels in the room
+    - Calculate light levels in the room
     - Allow user to input HEX value for RGB function of the lights
     - Convert HEX to RGB (decimal values)
 - LIDAR sensor should track distance between sensor and objects around the main door when alarm system is on
@@ -206,3 +207,22 @@ int main()
 	return 0;
 }
 ```
+
+## PWM - Pulse Width Modulation. Solving Light level calculations
+
+Find out how long of a pulse we should send to the light for different percentages of light emissions.  
+
+The most common frequenzy for a light dimmer is 500hz. The pulse time and width is measured in seconds  
+The so called duty cycle is measured in percentage which would indicate a 0 - 1 value... example 25% = 0.25  
+PW = Pulse width in seconds  
+D = Duty cycle in percentage value  
+T = 1 / f = Time  
+f = Frequency = Hz  
+
+PW = D * T  
+
+T = 1 / f = 1 / 500 = 0.002  
+D = 50% = 0.25  
+PW = 0.5 * 0.002 = 0.001  
+
+To achieve 50% light, it should pulse for 0.001 seconds every 0.002 seconds  
