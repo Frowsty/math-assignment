@@ -94,7 +94,7 @@ Every minute the sensor gathers temperature. For 2 hours we gather temperature o
 The equation would look something like this  
 t = Time = 120 minutes  
 X = Value = Temperature every minute  
-A = Average = (X1 + X2 + Xt) / t  
+A = Average = (X1 + X2 + ... + Xt) / t  
 Deviation = sqrt(sum of(X - A)^2/t)  
 
 Using the following equation we can calculate the population standard deviation  
