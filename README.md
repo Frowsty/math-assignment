@@ -90,11 +90,11 @@ the boolean operation AND or in this case '&&' to make sure we set the signal va
 The temperature sensor sends the Temperature
 Every minute the sensor gathers temperature. For 2 hours we gather temperature only. Every 2 hours we calculate the average temperature and the average deviance.
 
-The equation would look something like this
-t = Time = 120 minutes
-X = Value = Temperature every minute
-A = Average = (X1 + X2 + Xt) / t
-Deviation = sqrt(sum of(X - A)^2/t)
+The equation would look something like this  
+t = Time = 120 minutes  
+X = Value = Temperature every minute  
+A = Average = (X1 + X2 + Xt) / t  
+Deviation = sqrt(sum of(X - A)^2/t)  
 
 Using the following equation we can calculate the population standard deviation
 ![equation](https://www.bizskinny.com/images/population-standard-deviation-formula.PNG)
@@ -103,8 +103,8 @@ Using the following equation we can calculate the population standard deviation
 The conversion from HEX to RGB is very simple, to convert a hex value to RGB simply take the HEX color code and split it into 3 pieces.
 Example #32A852 -> R: #32, G: #A8, B: #52
 
-Once we have split it into 3 pieces we can calculate each piece separately
-
+Once we have split it into 3 pieces we can calculate each piece separately  
+  
 R: #32 -> (3 * 16) + 2 = 50
 G: #A8 -> (10 * 16) + 8 = 168
 B: #52 -> (5 * 16) + 2 = 82
